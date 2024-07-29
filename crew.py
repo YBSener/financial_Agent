@@ -11,6 +11,7 @@ from dotenv import load_dotenv
 
 
 
+
 # Environment Variables
 load_dotenv()
 os.environ["SERPER_API_KEY"] = os.getenv("SERPER_API_KEY")
