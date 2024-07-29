@@ -7,13 +7,16 @@ from tools.yf_fundamental_analysis_tool import yf_fundamental_analysis
 from langchain_community.tools.yahoo_finance_news import YahooFinanceNewsTool
 from langchain_groq import ChatGroq
 from langchain_openai import ChatOpenAI
+from dotenv import load_dotenv
+
 
 
 # Environment Variables
-os.environ["SERPER_API_KEY"] = "faf2a9ec49111bbe6fa4044a0ff9269660118c50"
-os.environ["REDDIT_CLIENT_ID"] = "uDyp4JIyPAVsN-D3m7xAWA"
-os.environ["REDDIT_CLIENT_SECRET"] = "qx1AEvy7VVUWWyWN19Af40EV_ZFvKg"
-os.environ["REDDIT_USER_AGENT"] = "JokeComprehensive417"
+load_dotenv()
+os.environ["SERPER_API_KEY"] = os.getenv("SERPER_API_KEY")
+os.environ["REDDIT_CLIENT_ID"] = os.getenv("REDDIT_CLIENT_ID")
+os.environ["REDDIT_CLIENT_SECRET"] = os.getenv("REDDIT_CLIENT_SECRET")
+os.environ["REDDIT_USER_AGENT"] = os.getenv("REDDIT_USER_AGENT")
 
 def initialize_llm(model_option, openai_api_key, groq_api_key):
     if model_option == 'OpenAI GPT-4o':
