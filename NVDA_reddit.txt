@@ -1,0 +1,32 @@
+Data sourced from Reddit.
+Subreddit Name	Comment	Sentiment
+investing	I (like many others) am bullish on NVIDIA and have a risky strategy in mind involving borrowing on margin and I would like to know if it all makes sense the way I’m picturing it in my head.	positive
+investing	What is biggest risks to Yield Max ETF?	neutral
+investing	EPD to NVDA??? Would you sell EPD and invest the money in NVDA?	neutral
+investing	Investment versus rent-what would you do ? 	neutral
+investing	Interested in thoughts on five to ten year retirement plan	neutral
+investing	Compliments for QQQM and VTI	neutral
+investing	TMNT not Teenage Mutant Ninja Turtles	neutral
+investing	Just sold my first option	neutral
+investing	Investing in 50-60 holdings, thinking i may cut it down to 10-12 and just go balls deep in those	negative
+investing	Current analyst ratings of the 10 biggest US stocks	neutral
+investing	Anyone else seeing these daily ~5% aftermarket flash drops in Big Tech? Insider or whale selloff?	negative
+investing	Could the AI bubble end up looking like MSFT after the dotcom bubble?	neutral
+investing	Using nvda shares to Pay off mortgages. good or bad ideas? 	neutral
+stocks	Palo Networks After Crowdstrike Tech Outage?	neutral
+stocks	Why are people so confident about upcoming NVDA August earnings?	positive
+stocks	Wheeling stocks $NDVA $GME $DJT $AVGO and option play on $PFE and thoughts on future plays. 	neutral
+stocks	Trying to recoup my $75k losses has made me emotional, so I am sincerely asking for your help moving forward.	negative
+stocks	These are the stocks on my watchlist (7/18) 	neutral
+stocks	What are you eyeing up given this selloff?	neutral
+stocks	These are the stocks on my watchlist (7/17)  	neutral
+stocks	Beware- Safeguards and Disabling Margin on Schwab DO NOT WORK. 	neutral
+stocks	Recent Intel Gaming Chips have >50% Failure Rate	negative
+stocks	Anyone else having this problem?	neutral
+stocks	Is Reddit the Perfect stock? 	neutral
+stocks	These are the stocks on my watchlist (7/12) 	neutral
+stocks	NVDA.NE just went from 120 CAD to 30 CAD. Anyone know the reasoning?	neutral
+stocks	Can someone explain to me Nancy Pelosi's AVGO position?	neutral
+stocks	What needs to happen for Pelosi’s calls to print?	neutral
+stocks	MSFT and AAPL are overvalued and overbought, Wallstreet is expecting too much from AI. 	negative
+NVIDIA	Game Ready & Studio Driver 560.70 FAQ/Discussion	neutral
