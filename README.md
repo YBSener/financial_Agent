@@ -24,10 +24,9 @@
 ### Setup
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/professional-stock-analysis-dashboard.git
-    cd professional-stock-analysis-dashboard
+    git clone https://github.com/YBSener/financial_Agent.git
+    cd financial_Agent
     ```
-
 2. Install the required Python packages:
     ```sh
     pip install -r requirements.txt
