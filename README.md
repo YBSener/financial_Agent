@@ -1,6 +1,6 @@
 # 📊 Professional Stock Analysis Dashboard
 
-    **For more, you can check projects gif on this file: finagent.gif
+    For more, you can check projects gif on this file: finagent.gif
 
 ## 🌟 Overview
 **Professional Stock Analysis Dashboard** is a web application that allows users to analyze stocks using advanced machine learning models and financial tools. The application provides detailed insights into stock performance, technical analysis, fundamental analysis, and sentiment analysis from various sources.
