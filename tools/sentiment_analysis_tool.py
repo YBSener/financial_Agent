@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from crewai_tools import tool
 
-# Model ve tokenizer'ı yükleyin
+# Download hf model and tokenizer
 tokenizer = AutoTokenizer.from_pretrained("mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis")
 model = AutoModelForSequenceClassification.from_pretrained("mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis")
 
@@ -55,13 +55,14 @@ def reddit_sentiment_analysis(stock_symbol: str, subreddits: list = ['wallstreet
         list: List of sentiment labels for each post.
     """
     all_sentiments = []
-    with open(f"{stock_symbol}_reddit.txt", "w", encoding="utf-8") as f:
-        f.write("Data sourced from Reddit.\n")
-        f.write("Subreddit Name\tComment\tSentiment\n")
-        for subreddit in subreddits:
-            posts = get_reddit_posts(subreddit, stock_symbol, limit)
-            for post in posts:
-                sentiment = analyze_sentiment(post)
-                all_sentiments.append((subreddit, post, sentiment))
-                f.write(f"{subreddit}\t{post}\t{sentiment}\n")
-    return all_sentiments
+    sentiments_counts={'neutral': 0, 'negative': 0, 'positive': 0}
+    
+    for subreddit in subreddits:
+        posts = get_reddit_posts(subreddit, stock_symbol, limit)
+        for post in posts:
+            sentiment = analyze_sentiment(post)
+            all_sentiments.append((sentiment))
+            sentiments_counts[sentiment]+=1
+               
+
+    return sentiments_counts

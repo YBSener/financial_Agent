@@ -19,6 +19,7 @@ os.environ["REDDIT_CLIENT_ID"] = os.getenv("REDDIT_CLIENT_ID")
 os.environ["REDDIT_CLIENT_SECRET"] = os.getenv("REDDIT_CLIENT_SECRET")
 os.environ["REDDIT_USER_AGENT"] = os.getenv("REDDIT_USER_AGENT")
 
+# Model Selection
 def initialize_llm(model_option, openai_api_key, groq_api_key):
     if model_option == 'OpenAI GPT-4o':
         return ChatOpenAI(openai_api_key=openai_api_key, model='gpt-4o', temperature=0.1)
@@ -41,7 +42,7 @@ def create_crew(stock_symbol, model_option, openai_api_key, groq_api_key):
     yf_tech_tool = yf_tech_analysis
     yf_fundamental_tool = yf_fundamental_analysis
 
-    # Agent Definitions
+    # Agents Definitions
     researcher = Agent(
         role='Senior Stock Market Researcher',
         goal='Gather and analyze comprehensive data about {stock_symbol}',
@@ -149,7 +150,7 @@ def create_crew(stock_symbol, model_option, openai_api_key, groq_api_key):
         agent=reporter
     )
 
-    # Crew Definition and Kickoff
+    # Crew Definition and Kickoff for Result
     crew = Crew(
         agents=[researcher, technical_analyst, fundamental_analyst, reporter],
         tasks=[research_task, technical_analysis_task, fundamental_analysis_task, report_task],
