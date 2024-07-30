@@ -1,6 +1,6 @@
 # 📊 Professional Stock Analysis Dashboard
 
-    ![Usage](.\financial_Agent\finagent.gif)
+    ![Usage](./financial_Agent/finagent.gif)
 
 ## 🌟 Overview
 **Professional Stock Analysis Dashboard** is a web application that allows users to analyze stocks using advanced machine learning models and financial tools. The application provides detailed insights into stock performance, technical analysis, fundamental analysis, and sentiment analysis from various sources.
@@ -18,6 +18,8 @@
 - Streamlit
 - yFinance
 - Plotly
+- Langchain
+- Praw
 - CrewAI
 - Required API keys
 
