@@ -27,21 +27,23 @@ st.markdown("""
 st.markdown('<p class="big-font">Stock Analysis Agent</p>', unsafe_allow_html=True)
 st.sidebar.markdown('<p class="medium-font">Configuration</p>', unsafe_allow_html=True)
 
-# Açıklama
 st.markdown("""
 <div class="analysis-card">
     <h2 class="analysis-title">Advanced AI-Powered Stock Analysis Platform</h2>
     <p class="analysis-content">
-        Welcome to our cutting-edge stock analysis platform, leveraging Artificial Intelligence and Large Language Models (LLMs) to deliver professional-grade investment insights. Our system offers:
+        Welcome to my cutting-edge stock analysis platform, leveraging Artificial Intelligence and Large Language Models (LLMs) to deliver professional-grade investment insights. Our system offers:
     </p>
     <ul class="analysis-list">
-        <li class="analysis-list-item">Comprehensive sentiment analysis derived from Reddit discussions</li>
+        <li class="analysis-list-item">Comprehensive sentiment analysis derived from Reddit discussions, utilizing posts from the subreddits wallstreetbets, stocks, and investing.</li>
         <li class="analysis-list-item">In-depth fundamental and technical analyses</li>
         <li class="analysis-list-item">Extensive web and news research integration</li>
         <li class="analysis-list-item">Customizable analysis parameters including time frames and specific indicators</li>
     </ul>
     <p class="analysis-content">
         Users can obtain a detailed, AI-generated analysis report by simply selecting a stock symbol, specifying a time period, and choosing desired analysis indicators. This platform aims to empower investors with data-driven, AI-enhanced decision-making tools for the complex world of stock market investments.
+    </p>
+    <p class="analysis-content">
+        Please note, this analysis is for informational purposes only and should not be construed as financial or investment advice.
     </p>
 </div>
 """, unsafe_allow_html=True)
@@ -169,11 +171,11 @@ if st.session_state.stock_info:
 if st.session_state.result_file_path:
     st.markdown('<p class="medium-font">Analysis Result</p>', unsafe_allow_html=True)
     
-    # Read the result from the file
+    
     with open(st.session_state.result_file_path, 'r') as file:
         result = file.read()
     
-    # Display the markdown content
+    
     st.markdown(result)
 
 # Display chart
@@ -181,6 +183,6 @@ if st.session_state.analyzed and st.session_state.stock_data is not None:
     st.markdown('<p class="medium-font">Interactive Stock Chart</p>', unsafe_allow_html=True)
     st.plotly_chart(plot_stock_chart(st.session_state.stock_data, indicators), use_container_width=True)
 
-# Footer
+
 st.markdown("---")
 st.markdown('<p class="small-font">Created by Batuhan Sener | Data provided by Reddit and Yahoo Finance </p>', unsafe_allow_html=True)
