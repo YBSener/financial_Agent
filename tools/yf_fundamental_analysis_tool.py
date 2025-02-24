@@ -28,7 +28,7 @@ def yf_fundamental_analysis(ticker: str):
         balance_sheet = balance_sheet.ffill()
         cash_flow = cash_flow.ffill()
 
-        # Key Ratios and Metrics
+        # Define Key Ratios and Metrics
         ratios = {
             "P/E Ratio": info.get('trailingPE'),
             "Forward P/E": info.get('forwardPE'),
